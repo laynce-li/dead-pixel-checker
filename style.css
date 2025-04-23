@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    overflow: hidden; /* 隐藏滚动条 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000; /* 默认背景色 */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#color-display {
+    width: 100vw;
+    height: 80vh; /* 可以调整高度 */
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+/* 全屏样式 */
+body.fullscreen #color-display {
+    width: 100vw;
+    height: 100vh;
+}
